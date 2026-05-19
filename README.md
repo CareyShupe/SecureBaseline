@@ -97,6 +97,13 @@ The script runs in sequential steps:
 - All file downloads from DoD sources use `Invoke-WebRequest`. Ensure your network can reach `dl.dod.cyber.mil`.
 - The DoD STIG GPO package filename (e.g., `U_STIG_GPO_Package_April_2026.zip`) is hard-coded and will need updating as new releases are published.
 - The Windows 11 OS media path targets `25H2` and will need updating for future builds.
+- When creating a Windows image in a VM during **audit mode**, you can customize which packages are installed by editing the software package list in the script before running it.
+
+---
+
+## Credits
+
+This script was inspired by [Daniel Barras](https://www.youtube.com/@danielbarras) and his video on building a Secure Baseline for Windows 11. Check out his channel for walkthroughs and guidance on Windows hardening and image creation.
 
 ---
 
